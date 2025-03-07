@@ -1,0 +1,102 @@
+
+id,name,description,category,price
+1,Nike Pegasus,Lightweight running shoe,Shoes,120
+2,Adidas Ultraboost,Cushioned running shoe,Shoes,150
+3,North Face Jacket,Waterproof hiking jacket,Jackets,200
+4,Levi's 501 Jeans,Classic fit denim jeans,Clothing,80
+5,Puma Velocity Nitro,Responsive cushioned running shoe,Shoes,110
+6,Columbia Alpine Jacket,Insulated winter jacket,Jackets,180
+7,Wrangler Classic Jeans,Durable denim jeans,Clothing,75
+8,Ray-Ban Aviators,Polarized UV protection sunglasses,Accessories,140
+9,Samsung Galaxy Buds,Wireless noise-canceling earbuds,Electronics,130
+10,Asics Gel Nimbus,Shock-absorbing running shoe,Shoes,135
+11,Patagonia Down Sweater,Lightweight insulated jacket,Jackets,210
+12,Levi's 511 Slim Jeans,Slim fit modern denim,Clothing,85
+13,Oakley Holbrook Sunglasses,Impact-resistant lenses,Accessories,160
+14,Sony WH-1000XM5,Noise-canceling over-ear headphones,Electronics,350
+15,Reebok Floatride Energy,High-rebound lightweight shoe,Shoes,125
+16,Arc'teryx Beta Jacket,GORE-TEX waterproof shell,Jackets,300
+17,Lee Regular Fit Jeans,Classic straight-leg denim,Clothing,70
+18,Gucci Leather Wallet,Genuine leather cardholder,Accessories,250
+19,Apple AirPods Pro,Active noise cancellation earbuds,Electronics,250
+20,New Balance 1080v12,Maximum cushioning running shoe,Shoes,140
+21,The North Face Apex Bionic,Windproof softshell jacket,Jackets,190
+22,Tommy Hilfiger Chinos,Slim fit stretch chinos,Clothing,90
+23,Fossil Gen 6 Smartwatch,Touchscreen fitness tracking,Accessories,220
+24,GoPro Hero 11,4K waterproof action camera,Electronics,400
+25,Under Armour HOVR,Energy-returning running shoes,Shoes,130
+26,Canada Goose Expedition Parka,Extreme weather insulated coat,Jackets,950
+27,Calvin Klein Slim Jeans,Modern stretch denim,Clothing,95
+28,Tissot Chrono XL,Stainless steel chronograph watch,Accessories,275
+29,Bose QuietComfort 45,Wireless noise-canceling headphones,Electronics,330
+30,Brooks Ghost 15,Plush cushioning running shoe,Shoes,135
+31,Mountain Hardwear StretchDown,Flexible insulated jacket,Jackets,230
+32,Nike Dri-FIT T-Shirt,Breathable athletic tee,Clothing,45
+33,Ray-Ban Wayfarer,Scratch-resistant polarized shades,Accessories,155
+34,Apple Watch Series 9,Advanced health tracking smartwatch,Electronics,430
+35,Salomon Speedcross 5,Trail running shoes with grip,Shoes,150
+36,Columbia Bugaboo II,3-in-1 ski jacket,Jackets,220
+37,Hugo Boss Dress Shirt,Tailored formal cotton shirt,Clothing,120
+38,Garmin Fenix 7,Multisport GPS smartwatch,Accessories,700
+39,Samsung Galaxy Watch 5,Comprehensive fitness tracking,Electronics,300
+40,Adidas Adizero Boston,Performance marathon running shoe,Shoes,160
+41,Marmot PreCip Eco,Lightweight rain jacket,Jackets,150
+42,Ralph Lauren Polo Shirt,Classic embroidered polo,Clothing,80
+43,Citizen Eco-Drive,Light-powered titanium watch,Accessories,320
+44,DJI Mini 3 Pro,Compact 4K camera drone,Electronics,800
+45,Nike ZoomX Vaporfly,Elite racing running shoe,Shoes,250
+46,Arc'teryx Cerium LT,Premium down insulation jacket,Jackets,380
+47,Uniqlo Heattech Thermal,Warm layering long-sleeve,Clothing,40
+48,Omega Seamaster,High-end dive watch,Accessories,5000
+49,Beats Studio Buds,Wireless active noise-canceling earbuds,Electronics,150
+50,Merrell Moab 3,Durable hiking shoes,Shoes,125
+51,Black Diamond Stormline,Stretch waterproof shell,Jackets,175
+52,Gap Classic Hoodie,Cotton fleece pullover,Clothing,60
+53,Montblanc Leather Belt,Full-grain premium leather,Accessories,190
+54,Amazon Kindle Paperwhite,Waterproof e-reader,Electronics,140
+55,Hoka One One Clifton 8,Soft cushioned running shoe,Shoes,130
+56,The North Face ThermoBall,Packable synthetic insulation,Jackets,190
+57,Zara Slim Fit Blazer,Modern lightweight suit jacket,Clothing,150
+58,Rolex Submariner,Luxury stainless steel watch,Accessories,10000
+59,Google Pixel Buds Pro,Adaptive sound wireless earbuds,Electronics,200
+60,Nike Free RN Flyknit,Flexible barefoot-feel running shoe,Shoes,110
+61,Eddie Bauer First Ascent,Alpine technical jacket,Jackets,270
+62,Ted Baker Oxford Shirt,Stretch cotton formal wear,Clothing,115
+63,Fitbit Charge 5,Advanced health tracking band,Accessories,180
+64,GoPro Max,360-degree waterproof action camera,Electronics,500
+65,Adidas Terrex AX3,Waterproof hiking trail shoes,Shoes,140
+66,Helly Hansen Crew Midlayer,Windproof and waterproof jacket,Jackets,160
+67,Tom Ford Sunglasses,Premium acetate frames,Accessories,400
+68,Bose Sport Earbuds,Sweat-resistant wireless audio,Electronics,180
+69,Asics GT-2000,Stability running shoe,Shoes,130
+70,Outdoor Research Helium,Ultralight storm jacket,Jackets,160
+71,Bonobos Stretch Pants,Comfortable workwear trousers,Clothing,110
+72,TAG Heuer Carrera,Racing-inspired luxury watch,Accessories,4500
+73,Sony PlayStation 5,Next-gen gaming console,Electronics,500
+74,Reebok Nano X2,Versatile training and lifting shoes,Shoes,125
+75,Arc'teryx Atom LT,Lightweight insulated active jacket,Jackets,250
+76,Allbirds Wool Runners,Eco-friendly merino wool sneakers,Shoes,100
+77,Canada Goose HyBridge Lite,Performance stretch-down hybrid,Jackets,600
+78,Levi's Trucker Jacket,Classic denim outerwear,Clothing,90
+79,Fossil Leather Briefcase,Premium office bag,Accessories,250
+80,Samsung 4K QLED TV,Smart home entertainment screen,Electronics,1200
+81,Puma Deviate Nitro,Superfoam racing shoe,Shoes,160
+82,Patagonia Nano Puff,Recycled synthetic insulation,Jackets,200
+83,Hanes ComfortSoft Hoodie,Casual fleece-lined hoodie,Clothing,50
+84,Casio G-Shock Mudmaster,Tactical all-terrain watch,Accessories,500
+85,Bowers & Wilkins PX7,Studio-grade wireless headphones,Electronics,400
+86,New Balance Fresh Foam,Soft everyday running shoe,Shoes,130
+87,Columbia Powder Lite,Synthetic fill winter jacket,Jackets,170
+88,H&M Slim Chinos,Affordable smart-casual pants,Clothing,55
+89,Bellroy Travel Wallet,Minimalist passport holder,Accessories,150
+90,Dyson Supersonic Hair Dryer,Salon-grade fast drying,Electronics,400
+91,Nike Metcon 8,Cross-training performance shoes,Shoes,140
+92,REI Co-op Rain Jacket,Packable waterproof outerwear,Jackets,120
+93,Tommy Hilfiger Cotton Sweater,Soft ribbed-knit pullover,Clothing,85
+94,Garmin Forerunner 255,Advanced GPS running watch,Accessories,350
+95,AirPods Max,High-fidelity over-ear headphones,Electronics,550
+96,On Cloudflow,Racing-focused lightweight shoes,Shoes,150
+97,Marmot Minimalist,Lightweight GORE-TEX jacket,Jackets,200
+98,The North Face Denali,Classic retro fleece jacket,Clothing,130
+99,Timbuk2 Laptop Backpack,Weather-resistant tech bag,Accessories,180
+100,LG C2 OLED TV,Ultra-premium 4K smart TV,Electronics,1800
