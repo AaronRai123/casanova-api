@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+numpy
+pandas
+pinecone-client
+sentence-transformers
+transformers
+torch
+fuzzywuzzy
+python-Levenshtein
+accelerate
+tiktoken
+protobuf
+scipy

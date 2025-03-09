@@ -1,49 +1,33 @@
-
-import os
 import numpy as np
-from pinecone import Pinecone
-from sentence_transformers import SentenceTransformer
-import re
+from backend.embeddings import index, model
+from backend.query_processing import parse_query
 
-# Load transformer model
-model = SentenceTransformer("all-MiniLM-L6-v2")
-
-# Initialize Pinecone using the new API
-pc = Pinecone(
-    api_key=os.environ.get("PINECONE_API_KEY", "pcsk_WQgQD_KavoYd4hHmkpZM6ezo8yQF4MwoKbsjzBaSW3EwahMUhGdu2Nw5psnZhf4VNfcgp"))
-# Connect to Pinecone Index
-index = pc.Index("casanova-search")
-
-def parse_query(query):
-    """Detects and separates inclusion and exclusion terms in a query."""
-    exclusion_pattern = r"\bnot\b\s+([\w\s]+)"
-    excluded_terms = re.findall(exclusion_pattern, query, re.IGNORECASE)
-    
-    for term in excluded_terms:
-        query = query.replace(f"not {term}", "").strip()
-    
-    return query, excluded_terms
-
-def get_contrastive_embedding(query, excluded_terms):
-    """Generates an embedding that contrasts the query with excluded terms."""
-    positive_embed = model.encode(query)
-    if excluded_terms:
-        negative_embed = model.encode(" ".join(excluded_terms))
-        return positive_embed - np.dot(positive_embed, negative_embed) * negative_embed
-    return positive_embed
+def apply_exclusion_penalty(query_vector, excluded_vectors, lambda_penalty=0.5):
+    """Subtracts the weighted average of excluded term vectors from the query vector."""
+    if excluded_vectors:
+        exclusion_vector = np.mean(excluded_vectors, axis=0)
+        return query_vector - lambda_penalty * exclusion_vector
+    return query_vector
 
 def search_products(query):
     """Retrieves products while handling semantic exclusions."""
-    query, excluded_terms = parse_query(query)
-    query_vector = get_contrastive_embedding(query, excluded_terms).tolist()
+    # Parse the query to get the refined query and excluded terms.
+    refined_query, excluded_terms = parse_query(query)
+    # Get the query vector for the refined query.
+    query_vector = model.encode(refined_query)
 
-    results = index.query(vector=query_vector, top_k=50, include_metadata=True)
-    
+    # Encode each excluded term.
+    excluded_vectors = [model.encode(term) for term in excluded_terms] if excluded_terms else []
+    # Adjust the query vector by applying the exclusion penalty.
+    adjusted_vector = apply_exclusion_penalty(query_vector, excluded_vectors, lambda_penalty=0.5)
+
+    # Query the Pinecone index.
+    results = index.query(vector=adjusted_vector.tolist(), top_k=50, include_metadata=True)
+
+    # Filter out any candidate whose description includes an excluded term.
     filtered_results = []
     for product in results["matches"]:
         product_desc = product["metadata"].get("description", "").lower()
-        
-        # Exclude products containing the forbidden words
         if not any(term.lower() in product_desc for term in excluded_terms):
             filtered_results.append(product)
 
